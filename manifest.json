@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "LOOT.farm Profit Calculator",
+    "short_name": "LOOT Calculator",
+    "version": "1.0.0",
+    "description": "Подсчёт прибыли loof.farm",
+    "author": "TradeBack",
+
+    "content_scripts": [
+        {
+            "matches": ["*://loot.farm/*/account.html"],
+            "css": [
+                "assets/css/style.css"
+            ],
+            "js": [
+                "assets/js/jquery.js",
+                "assets/js/script.js"
+            ]
+        }
+    ],
+
+    "permissions" : [
+        "*://loot.farm/*/account.html",
+        "storage"
+    ]
+}

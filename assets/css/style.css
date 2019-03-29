@@ -1,0 +1,52 @@
+.profit-menu {
+    display: contents;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.my-profit {
+    display: inline-block;
+    color: white;
+    padding: 7px 10px;
+}
+
+.my-profit .green {
+    color: #11aa11;
+}
+
+.my-profit .orange {
+    color: #e34646;
+}
+
+.my-profit .bonus {
+    font-size: 13px;
+}
+
+.profit-menu li {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.profit-menu li:hover {
+    opacity: 1;
+}
+
+tr[profit-start] {
+    outline: 2px solid yellow;
+}
+
+tr[profit-end] {
+    outline: 2px solid blue;
+}
+
+.remove-profit {
+    font-size: 13px;
+    color: #ff0000b5;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.remove-profit:hover {
+    opacity: 1;
+}
